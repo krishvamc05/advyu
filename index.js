@@ -239,4 +239,91 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
+  // --- CRO: Pricing Countdown Timer ---
+  const promoCountdown = document.getElementById('promo-countdown');
+  const pricingCountdown = document.getElementById('pricing-countdown-timer');
+  
+  if (promoCountdown || pricingCountdown) {
+    let timeLeft = 5 * 60; // 5 minutes in seconds
+    
+    const updateTimer = setInterval(() => {
+      timeLeft--;
+      if (timeLeft <= 0) {
+        clearInterval(updateTimer);
+        if (promoCountdown) promoCountdown.textContent = "00:00";
+        if (pricingCountdown) pricingCountdown.textContent = "00:00";
+        return;
+      }
+      
+      const minutes = Math.floor(timeLeft / 60);
+      const seconds = timeLeft % 60;
+      const display = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+      
+      if (promoCountdown) promoCountdown.textContent = display;
+      if (pricingCountdown) pricingCountdown.textContent = display;
+    }, 1000);
+  }
+
+  // --- CRO: Exit Intent Modal ---
+  const exitModal = document.getElementById('exit-modal');
+  const closeExitModal = document.getElementById('close-exit-modal');
+  let hasShownExitModal = false;
+
+  if (exitModal) {
+    // Trigger on mouse leave window (desktop)
+    document.addEventListener('mouseout', (e) => {
+      if (e.clientY < 50 && !hasShownExitModal) {
+        hasShownExitModal = true;
+        exitModal.classList.add('active');
+      }
+    });
+
+    // Close button
+    if (closeExitModal) {
+      closeExitModal.addEventListener('click', () => {
+        exitModal.classList.remove('active');
+      });
+    }
+
+    // Close on overlay click
+    exitModal.addEventListener('click', (e) => {
+      if (e.target === exitModal) {
+        exitModal.classList.remove('active');
+      }
+    });
+  }
+
+  // --- CRO: FOMO Live Notifications ---
+  const fomoNotification = document.getElementById('fomo-notification');
+  const fomoText = document.getElementById('fomo-text');
+  
+  if (fomoNotification && fomoText) {
+    const fomoNames = ["Rahul from Delhi", "Priya from Bangalore", "Amit from Mumbai", "Neha from Pune", "Vikram from Hyderabad"];
+    const fomoActions = ["started a 14-day trial", "booked a demo", "upgraded to Growth Engine", "synced their Justdial CRM"];
+    
+    // Show first notification after 5 seconds
+    setTimeout(showFomoNotification, 5000);
+    
+    function showFomoNotification() {
+      // Randomize content
+      const name = fomoNames[Math.floor(Math.random() * fomoNames.length)];
+      const action = fomoActions[Math.floor(Math.random() * fomoActions.length)];
+      fomoText.innerHTML = `<strong>${name}</strong> just ${action}.`;
+      
+      // Slide in
+      fomoNotification.classList.add('show');
+      
+      // Hide after 4 seconds
+      setTimeout(() => {
+        fomoNotification.classList.remove('show');
+        
+        // Schedule next one (random between 10-20 seconds)
+        const nextDelay = Math.floor(Math.random() * 10000) + 10000;
+        setTimeout(showFomoNotification, nextDelay);
+      }, 4000);
+    }
+  }
+
 });
+

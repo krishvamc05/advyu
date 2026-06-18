@@ -1271,4 +1271,258 @@ textarea.form-control {
     grid-template-columns: 1fr;
     gap: 40px;
   }
+
+  .mobile-sticky-cta {
+    display: block;
+  }
+}
+
+/* ==========================================================================
+   CRO Components & Optimizations
+   ========================================================================== */
+
+/* Top Promo Banner */
+.top-promo-banner {
+  background: linear-gradient(90deg, var(--accent-primary) 0%, #ff5e00 100%);
+  color: #fff;
+  font-family: var(--font-primary);
+}
+
+/* VS Table (Old Way vs New Way) */
+.vs-table {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background: var(--bg-surface);
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 900px) {
+  .vs-table {
+    flex-direction: row;
+    align-items: stretch;
+    padding: 0;
+  }
+}
+
+.vs-column {
+  flex: 1;
+  padding: 20px;
+}
+
+@media (min-width: 900px) {
+  .vs-column {
+    padding: 40px;
+  }
+}
+
+.vs-old {
+  background: rgba(239, 68, 68, 0.03);
+}
+
+.vs-new {
+  background: rgba(16, 185, 129, 0.05);
+}
+
+.vs-badge {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+}
+
+.vs-badge.old {
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.vs-badge.new {
+  background: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.vs-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.vs-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+  font-size: 1.05rem;
+  color: var(--text-main);
+  line-height: 1.5;
+}
+
+.vs-old .vs-list li svg {
+  stroke: #ef4444;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.vs-new .vs-list li svg {
+  stroke: #10b981;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.vs-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 900;
+  color: var(--text-muted);
+  font-size: 1.2rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+@media (min-width: 900px) {
+  .vs-divider {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+}
+
+/* Exit-Intent Modal */
+.exit-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(5px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.exit-modal-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.exit-modal-content {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  padding: 40px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  transform: translateY(20px);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.exit-modal-overlay.active .exit-modal-content {
+  transform: translateY(0);
+}
+
+.exit-modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.exit-modal-close:hover {
+  color: var(--text-main);
+}
+
+/* FOMO Live Notification */
+.fomo-notification {
+  position: fixed;
+  bottom: 20px;
+  left: -400px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  padding: 12px 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  z-index: 9998;
+  transition: left 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.fomo-notification.show {
+  left: 20px;
+}
+
+.fomo-icon {
+  background: rgba(16, 185, 129, 0.1);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fomo-text {
+  font-size: 0.9rem;
+  margin-bottom: 2px;
+  color: var(--text-main);
+}
+
+.fomo-time {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+/* Mobile Sticky CTA */
+.mobile-sticky-cta {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  background: var(--bg-surface);
+  border-top: 1px solid var(--border-color);
+  z-index: 9997;
+}
+
+@media (max-width: 768px) {
+  .mobile-sticky-cta {
+    display: block;
+  }
+  
+  /* Add padding to body so it doesn't overlap footer content */
+  body {
+    padding-bottom: 80px;
+  }
 }
