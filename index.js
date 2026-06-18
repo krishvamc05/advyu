@@ -50,14 +50,14 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentTotal = 0;
     Object.keys(rangeInputs).forEach(key => {
       const val = parseInt(rangeInputs[key].value, 10);
-      rangeValues[key].textContent = `$${val}`;
+      rangeValues[key].textContent = `₹${val.toLocaleString('en-IN')}`;
       currentTotal += val;
     });
 
-    // Advyu standard cost is $99/mo
-    const advyuCost = 99;
+    // Advyu standard cost is ₹5999/mo
+    const advyuCost = 5999;
     const saving = Math.max(0, currentTotal - advyuCost);
-    calcSaving.textContent = `$${saving}/mo`;
+    calcSaving.textContent = `₹${saving.toLocaleString('en-IN')}/mo`;
   }
 
   if (rangeInputs.funnels) {
@@ -124,18 +124,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (plan === 'starter') {
         if (isAnnual) {
-          valueSpan.textContent = '39'; // $39/mo billed annually
+          valueSpan.textContent = '2,499'; // ₹2,499/mo billed annually
           termSpan.textContent = '/mo, billed annually';
         } else {
-          valueSpan.textContent = '49';
+          valueSpan.textContent = '2,999';
           termSpan.textContent = '/mo';
         }
       } else if (plan === 'growth') {
         if (isAnnual) {
-          valueSpan.textContent = '79'; // $79/mo billed annually
+          valueSpan.textContent = '4,999'; // ₹4,999/mo billed annually
           termSpan.textContent = '/mo, billed annually';
         } else {
-          valueSpan.textContent = '99';
+          valueSpan.textContent = '5,999';
           termSpan.textContent = '/mo';
         }
       }

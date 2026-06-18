@@ -217,19 +217,35 @@ p {
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-family: var(--font-display);
-  font-weight: 800;
-  font-size: 1.4rem;
-  color: var(--text-highlight);
+  gap: 12px;
+  text-decoration: none;
 }
 
-.logo-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: var(--accent-secondary);
-  box-shadow: 0 0 10px var(--accent-secondary);
+.logo-icon {
+  width: 42px;
+  height: 42px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  border-radius: 6px;
+}
+
+.logo-icon img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+}
+
+.logo-text {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.8rem;
+  color: var(--text-highlight);
+  line-height: 1;
+  letter-spacing: -1.2px;
 }
 
 .nav-links {
