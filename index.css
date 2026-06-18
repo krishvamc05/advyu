@@ -221,6 +221,13 @@ p {
   text-decoration: none;
 }
 
+.logo-image {
+  height: 40px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
 .logo-icon {
   width: 42px;
   height: 42px;
