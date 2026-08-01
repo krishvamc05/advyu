@@ -265,34 +265,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 1000);
   }
 
-  // --- CRO: Exit Intent Modal ---
-  const exitModal = document.getElementById('exit-modal');
-  const closeExitModal = document.getElementById('close-exit-modal');
-  let hasShownExitModal = false;
 
-  if (exitModal) {
-    // Trigger on mouse leave window (desktop)
-    document.addEventListener('mouseout', (e) => {
-      if (e.clientY < 50 && !hasShownExitModal) {
-        hasShownExitModal = true;
-        exitModal.classList.add('active');
-      }
-    });
-
-    // Close button
-    if (closeExitModal) {
-      closeExitModal.addEventListener('click', () => {
-        exitModal.classList.remove('active');
-      });
-    }
-
-    // Close on overlay click
-    exitModal.addEventListener('click', (e) => {
-      if (e.target === exitModal) {
-        exitModal.classList.remove('active');
-      }
-    });
-  }
 
   // --- CRO: FOMO Live Notifications ---
   const fomoNotification = document.getElementById('fomo-notification');
