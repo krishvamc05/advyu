@@ -911,45 +911,38 @@
         </div>
 
         <div>
-          <!-- Contact Form -->
-          <form id="advyu-contact-form">
-            <div class="form-group">
-              <label for="form-name">Your Name</label>
-              <input type="text" id="form-name" class="form-control" required placeholder="Aarav Sharma">
-              <span class="form-error">Please enter your name.</span>
+          <!-- Webgearz Embedded Form & Button -->
+          <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-color); border-radius: 16px; padding: 40px 24px; text-align: center; height: 100%;">
+            <div style="width: 56px; height: 56px; border-radius: 50%; background: rgba(59, 130, 246, 0.1); display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
             </div>
+            <h3 style="font-size: 1.6rem; margin-bottom: 12px; font-weight: 700;">Ready to Scale Your Business?</h3>
+            <p style="color: var(--text-muted); margin-bottom: 28px; max-width: 400px; line-height: 1.6;">Click below to open the interactive form and reserve your 1-on-1 WhatsApp & Business Automation demo session.</p>
             
-            <div class="form-group">
-              <label for="form-phone">WhatsApp Mobile Number</label>
-              <input type="tel" id="form-phone" class="form-control" required placeholder="+91 99999 99999">
-              <span class="form-error">Please enter your mobile number.</span>
-            </div>
+            <button class="btn btn-primary" id="open-webgearz-demo" data-form-id="eyXvlZNzC1JuWAIRx15C" style="width: 100%; max-width: 320px; padding: 16px 28px; font-size: 1.1rem; font-weight: 600; cursor: pointer; box-shadow: 0 4px 20px rgba(59, 130, 246, 0.3);">
+              Book Free Demo Session
+            </button>
 
-            <div class="form-group">
-              <label for="form-email">Work Email</label>
-              <input type="email" id="form-email" class="form-control" required placeholder="aarav@company.com">
-              <span class="form-error">Please enter a valid email address.</span>
-            </div>
-
-            <div class="form-group">
-              <label for="form-company">Company / Business Name</label>
-              <input type="text" id="form-company" class="form-control" required placeholder="Advyu Solutions">
-              <span class="form-error">Please enter your business name.</span>
-            </div>
-
-            <div class="form-group">
-              <label for="form-message">Business Niche / Goals</label>
-              <textarea id="form-message" class="form-control" placeholder="E.g., Real estate agency in Delhi, wanting to automate property lead follow-ups via WhatsApp..."></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">Book Demo Session</button>
-          </form>
-
-          <!-- Success Screen -->
-          <div id="advyu-form-success" class="form-success">
-            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-            <h3>Demo Requested Successfully!</h3>
-            <p style="color: var(--text-muted); margin-top: 8px;">A senior growth consultant from Advyu Solutions will reach out to you via WhatsApp / Call within the next 2 hours to confirm your session.</p>
+            <!-- Webgearz Popup Form Embed -->
+            <iframe
+                src="https://link.webgearz.com/widget/form/eyXvlZNzC1JuWAIRx15C"
+                style="display:none;width:100%;height:100%;border:none;border-radius:3px"
+                id="popup-eyXvlZNzC1JuWAIRx15C" 
+                data-layout="{'id':'POPUP'}"
+                data-trigger-type="alwaysShow"
+                data-trigger-value=""
+                data-activation-type="alwaysActivated"
+                data-activation-value=""
+                data-deactivation-type="neverDeactivate"
+                data-deactivation-value=""
+                data-form-name="Free Demo - WhatsApp Business Automation"
+                data-height="671"
+                data-layout-iframe-id="popup-eyXvlZNzC1JuWAIRx15C"
+                data-form-id="eyXvlZNzC1JuWAIRx15C"
+                title="Free Demo - WhatsApp Business Automation"
+                data-modal-height="500">
+            </iframe>
+            <script src="https://link.webgearz.com/js/form_embed.js"></script>
           </div>
         </div>
       </div>
