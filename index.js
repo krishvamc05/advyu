@@ -111,50 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // --- Pricing Toggle (Monthly vs Annual) ---
-  const toggleMonthly = document.getElementById('toggle-monthly');
-  const toggleAnnual = document.getElementById('toggle-annual');
-  const pricingCards = document.querySelectorAll('.pricing-card');
 
-  function updatePrices(isAnnual) {
-    pricingCards.forEach(card => {
-      const plan = card.getAttribute('data-plan');
-      const valueSpan = card.querySelector('.price-amount .value');
-      const termSpan = card.querySelector('.price-amount .term');
-
-      if (plan === 'starter') {
-        if (isAnnual) {
-          valueSpan.textContent = '2,499'; // ₹2,499/mo billed annually
-          termSpan.textContent = '/mo, billed annually';
-        } else {
-          valueSpan.textContent = '2,999';
-          termSpan.textContent = '/mo';
-        }
-      } else if (plan === 'growth') {
-        if (isAnnual) {
-          valueSpan.textContent = '4,999'; // ₹4,999/mo billed annually
-          termSpan.textContent = '/mo, billed annually';
-        } else {
-          valueSpan.textContent = '5,999';
-          termSpan.textContent = '/mo';
-        }
-      }
-    });
-  }
-
-  if (toggleMonthly && toggleAnnual) {
-    toggleMonthly.addEventListener('click', () => {
-      toggleMonthly.classList.add('active');
-      toggleAnnual.classList.remove('active');
-      updatePrices(false);
-    });
-
-    toggleAnnual.addEventListener('click', () => {
-      toggleAnnual.classList.add('active');
-      toggleMonthly.classList.remove('active');
-      updatePrices(true);
-    });
-  }
 
   // --- Testimonial Slider ---
   const wrapper = document.querySelector('.testimonial-wrapper');
@@ -240,30 +197,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // --- CRO: Pricing Countdown Timer ---
-  const promoCountdown = document.getElementById('promo-countdown');
-  const pricingCountdown = document.getElementById('pricing-countdown-timer');
-  
-  if (promoCountdown || pricingCountdown) {
-    let timeLeft = 5 * 60; // 5 minutes in seconds
-    
-    const updateTimer = setInterval(() => {
-      timeLeft--;
-      if (timeLeft <= 0) {
-        clearInterval(updateTimer);
-        if (promoCountdown) promoCountdown.textContent = "00:00";
-        if (pricingCountdown) pricingCountdown.textContent = "00:00";
-        return;
-      }
-      
-      const minutes = Math.floor(timeLeft / 60);
-      const seconds = timeLeft % 60;
-      const display = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
-      
-      if (promoCountdown) promoCountdown.textContent = display;
-      if (pricingCountdown) pricingCountdown.textContent = display;
-    }, 1000);
-  }
+
 
 
 
