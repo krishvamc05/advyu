@@ -112,27 +112,44 @@ const Hero = () => {
           {/* Visual column */}
           <div className="relative animate-fade-in lg:pl-8">
             <div className="relative animate-float">
-              {/* Floating badge */}
-              <div className="absolute -left-4 top-6 z-20 glass rounded-2xl border border-border p-3 shadow-xl">
+              {/* Floating badge 1: Lead Captured */}
+              <div className="absolute -left-6 top-4 z-20 glass rounded-2xl border border-border p-3 shadow-xl">
                 <div className="flex items-center gap-2">
-                  <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-green-500/15">
-                    <Bot className="h-4 w-4 text-green-400" />
+                  <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-500/15">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" className="text-blue-500"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
                   </span>
                   <div>
                     <p className="text-xs font-semibold text-foreground">
-                      Lead captured
+                      Lead Captured
                     </p>
                     <p className="text-[10px] text-muted-foreground">
-                      via WhatsApp · just now
+                      via Social Profile / Website
                     </p>
                   </div>
                 </div>
               </div>
 
-              {/* Floating revenue badge */}
-              <div className="absolute -right-2 bottom-10 z-20 glass rounded-2xl border border-border p-3 shadow-xl">
+              {/* Floating badge 2: AI Nurturing */}
+              <div className="absolute -right-6 top-24 z-20 glass rounded-2xl border border-border p-3 shadow-xl animate-fade-in" style={{ animationDelay: "0.5s" }}>
+                <div className="flex items-center gap-2">
+                  <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-green-500/15">
+                    <Bot className="h-4 w-4 text-green-500" />
+                  </span>
+                  <div>
+                    <p className="text-xs font-semibold text-foreground">
+                      AI Bot Nurtures
+                    </p>
+                    <p className="text-[10px] text-muted-foreground">
+                      Automated follow-up sent
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Floating badge 3: Revenue Boost */}
+              <div className="absolute -right-4 bottom-8 z-20 glass rounded-2xl border border-border p-3 shadow-xl animate-fade-in" style={{ animationDelay: "1s" }}>
                 <p className="text-[10px] uppercase tracking-wide text-muted-foreground">
-                  Revenue
+                  Revenue Boost
                 </p>
                 <p className="text-lg font-bold text-gradient-brand">+312%</p>
               </div>
