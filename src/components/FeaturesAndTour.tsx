@@ -48,6 +48,47 @@ const FEATURES = [
 
 const TOUR_TABS = [
   {
+    id: "social-inbox",
+    label: "Unified Social Inbox",
+    title: "Centralize Conversations From All Social Platforms",
+    desc: "Stop jumping between tabs to check DMs and comments. Merge Instagram, Facebook, WhatsApp, Webchat, and SMS into one unified, collaborative inbox for your entire team.",
+    bullets: [
+      "Manage Facebook Messenger, Instagram DMs, and WhatsApp in one place",
+      "Assign conversations to specific team members instantly",
+      "Reply to social media comments directly from the dashboard",
+    ],
+    visual: (
+      <div className="rounded-xl border border-blue-500/30 bg-blue-950/20 p-6 space-y-4">
+        <div className="flex items-center gap-3 bg-blue-900/40 p-3 rounded-lg border border-blue-500/20">
+          <div className="flex -space-x-2">
+            <span className="flex h-6 w-6 items-center justify-center rounded-full bg-pink-500 border-2 border-background text-[10px] font-bold text-white">IG</span>
+            <span className="flex h-6 w-6 items-center justify-center rounded-full bg-blue-600 border-2 border-background text-[10px] font-bold text-white">FB</span>
+            <span className="flex h-6 w-6 items-center justify-center rounded-full bg-emerald-500 border-2 border-background text-[10px] font-bold text-white">WA</span>
+          </div>
+          <span className="text-xs font-mono text-blue-300">
+            Omnichannel Inbox Sync Active
+          </span>
+        </div>
+        <div className="space-y-3">
+          <div className="flex items-center justify-between bg-card/40 p-3 rounded-lg border border-border/50">
+            <div className="flex items-center gap-2">
+              <span className="h-2 w-2 rounded-full bg-pink-500" />
+              <span className="text-xs text-foreground/80">"How much is the consultation?"</span>
+            </div>
+            <span className="text-[10px] text-muted-foreground">Instagram DM</span>
+          </div>
+          <div className="flex items-center justify-between bg-card/40 p-3 rounded-lg border border-border/50">
+            <div className="flex items-center gap-2">
+              <span className="h-2 w-2 rounded-full bg-blue-500" />
+              <span className="text-xs text-foreground/80">"Do you have availability on Friday?"</span>
+            </div>
+            <span className="text-[10px] text-muted-foreground">FB Messenger</span>
+          </div>
+        </div>
+      </div>
+    ),
+  },
+  {
     id: "whatsapp",
     label: "WhatsApp Broadcasts",
     title: "Automate Conversations & Scale Engagement",
@@ -299,7 +340,7 @@ const CAPABILITIES = [
 ];
 
 const FeaturesAndTour: React.FC = () => {
-  const [activeTab, setActiveTab] = useState("whatsapp");
+  const [activeTab, setActiveTab] = useState("social-inbox");
   const currentTour = TOUR_TABS.find((t) => t.id === activeTab) || TOUR_TABS[0];
 
   return (
