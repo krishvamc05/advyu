@@ -12,7 +12,7 @@ const PILLARS = [
     icon: GitBranch,
     title: "Workflow Automation Journey",
     description:
-      "We map your end-to-end business processes — from lead capture to fulfilment — and automate the repetitive hand-offs so work flows without friction or delay.",
+      "We map your end-to-end business processes, from lead capture to fulfillment, and automate the repetitive hand-offs so work flows without friction or delay.",
   },
   {
     icon: Users,
@@ -22,9 +22,9 @@ const PILLARS = [
   },
   {
     icon: ShieldCheck,
-    title: "WhatsApp API & AI Automation",
+    title: "WhatsApp API & Automation",
     description:
-      "Capture leads across every channel, nurture them with AI, and book appointments 24/7 via the Meta-Verified WhatsApp API — all in one growth suite.",
+      "Capture leads across every channel, nurture them with automated sequences, and book appointments 24/7 via the Meta-Verified WhatsApp API. All in one growth suite.",
   },
 ];
 
@@ -39,7 +39,7 @@ const STEPS = [
     icon: Workflow,
     step: "02",
     title: "Build & Automate",
-    text: "We connect your tools, deploy AI-powered automations, and wire up the WhatsApp API for always-on lead engagement.",
+    text: "We connect your tools, deploy smart automations, and wire up the WhatsApp API for always-on lead engagement.",
   },
   {
     icon: Users,
@@ -51,7 +51,7 @@ const STEPS = [
     icon: Rocket,
     step: "04",
     title: "Scale & Optimise",
-    text: "We monitor performance, refine workflows, and scale what works — so your growth compounds without limits.",
+    text: "We monitor performance, refine workflows, and scale what works, so your growth compounds without limits.",
   },
 ];
 
@@ -65,7 +65,7 @@ const WorkflowChange = () => {
         <div className="mx-auto max-w-2xl text-center">
           <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-primary">
             <Workflow className="h-3.5 w-3.5" />
-            Beyond Software — A True Partner
+            Beyond Software. A True Partner
           </span>
           <h2 className="mt-6 text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
             We Don't Just Hand You Tools.{" "}
@@ -74,9 +74,9 @@ const WorkflowChange = () => {
             </span>
           </h2>
           <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
-            Advyu delivers more than the WhatsApp API and AI marketing
+            Advyu delivers more than the WhatsApp API and marketing
             automation. We embed in your business to drive workflow automation
-            and change management — ensuring the technology actually transforms
+            and team onboarding, ensuring the technology actively improves
             how your team works.
           </p>
         </div>

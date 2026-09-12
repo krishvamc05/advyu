@@ -16,33 +16,33 @@ const FEATURES = [
   {
     icon: MessageSquare,
     title: "Lead Capture: Every Channel",
-    desc: "Every lead—whether from Facebook, Google, Instagram, your website, or a phone call—flows directly into your CRM pipeline. No more lost opportunities.",
+    desc: "Every lead from Facebook, Google, Instagram, your website, or phone calls flows directly into your CRM pipeline. No more lost opportunities.",
   },
   {
     icon: Zap,
     title: "Follow-Up Automation",
-    desc: "Never miss a beat. Automatically send personalized welcome messages via WhatsApp within seconds of lead capture, and trigger intelligent AI nurturing sequences.",
+    desc: "Never miss a beat. Send personalized welcome messages via WhatsApp within seconds of lead capture, and trigger smart follow-up sequences.",
   },
   {
     icon: Calendar,
-    title: "Seamless Appointment Booking",
-    desc: "Leads book directly into your calendar based on your availability. Auto calendar sync, instant confirmations, and smart reminder sequences eliminate no-shows.",
+    title: "Appointment Booking",
+    desc: "Leads book directly into your calendar based on your availability. Auto calendar sync, instant confirmations, and reminder sequences eliminate no-shows.",
   },
   {
     icon: Bot,
-    title: "Your 24/7 AI Assistant",
-    desc: "Intelligent WhatsApp chatbots and AI call answering that route leads, answer FAQs, and book appointments automatically—even while you sleep.",
+    title: "Your 24/7 Assistant",
+    desc: "Smart WhatsApp chatbots and automated call answering that route leads, answer FAQs, and book appointments automatically, even while you sleep.",
     link: "https://engage.advyu.com/",
   },
   {
     icon: Image,
     title: "Done-for-You Content Engine",
-    desc: "Stay consistent effortlessly. Use an AI content calendar, ready-made creatives, and one-click publishing across Instagram, Facebook, TikTok, and Google.",
+    desc: "Stay consistent effortlessly. Use a built-in content calendar, ready-made creatives, and one-click publishing across Instagram, Facebook, TikTok, and Google.",
   },
   {
     icon: TrendingUp,
     title: "Smart Growth & Acquisition",
-    desc: "Turn attention into customers with AI-powered marketing tools, automated review/reputation management, AI ad copy, retargeting, and budget optimization.",
+    desc: "Turn attention into customers with smart marketing tools, automated review management, instant ad copy generation, retargeting, and budget optimization.",
   },
 ];
 
@@ -221,7 +221,7 @@ const CAPABILITIES = [
     category: "AI & Ads",
     popular: true,
     title: "AI Facebook Ads",
-    desc: "Auto-generate high-converting Facebook campaigns with AI.",
+    desc: "Auto-generate high-converting Facebook campaigns.",
   },
   {
     category: "AI & Ads",
@@ -245,7 +245,7 @@ const CAPABILITIES = [
     category: "Build & Launch",
     popular: false,
     title: "Website Builder",
-    desc: "Launch a full website in minutes — no code needed.",
+    desc: "Launch a full website in minutes. No code needed.",
   },
   {
     category: "Build & Launch",
@@ -317,13 +317,13 @@ const CAPABILITIES = [
     category: "Connect & Automate",
     popular: false,
     title: "Calendar Booking",
-    desc: "Let clients book meetings that sync seamlessly with your schedule.",
+    desc: "Let clients book meetings that sync directly with your schedule.",
   },
   {
     category: "Connect & Automate",
     popular: false,
     title: "Automation Workflow",
-    desc: "Trigger actions automatically — zero manual work required.",
+    desc: "Trigger actions automatically. Zero manual work required.",
   },
   {
     category: "Connect & Automate",
@@ -459,7 +459,7 @@ const FeaturesAndTour: React.FC = () => {
           </h2>
           <p className="mt-4 text-base text-muted-foreground sm:text-lg">
             Everything you need to launch, manage, and scale your business or
-            agency—in one dashboard.
+            agency, all in one dashboard.
           </p>
         </div>
 

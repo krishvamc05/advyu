@@ -71,10 +71,10 @@ const Hero = () => {
 
             <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
               Stop losing revenue to delayed follow-ups and scattered software.
-              Advyu goes beyond the Meta-Verified WhatsApp API and AI-powered
-              marketing automation — we partner with you through your entire
-              workflow automation journey and drive change management so your
-              team actually adopts the system and scales without limits.
+              Advyu goes beyond basic marketing automation. We give you the tools
+              to capture leads and close deals, plus the hands-on partnership to
+              make sure your team actually adopts the system. Scale your business
+              without breaking your operations.
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -161,7 +161,7 @@ const Hero = () => {
                   <span className="h-3 w-3 rounded-full bg-yellow-400/80" />
                   <span className="h-3 w-3 rounded-full bg-green-400/80" />
                   <span className="ml-3 text-xs font-medium text-muted-foreground">
-                    advyu.app — dashboard
+                    advyu.app / dashboard
                   </span>
                 </div>
 
@@ -231,7 +231,7 @@ const Hero = () => {
         {/* Trusted-by marquee */}
         <div className="mt-20 border-t border-border pt-10">
           <p className="text-center text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground">
-            Seamlessly Integrates &amp; Trusted By
+            Integrated With &amp; Trusted By
           </p>
           <div className="relative mt-6 overflow-hidden [mask-image:linear-gradient(90deg,transparent,#000_12%,#000_88%,transparent)]">
             <div className="flex w-max animate-marquee gap-12">

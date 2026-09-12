@@ -15,7 +15,7 @@ const NotFound = () => {
   return (
     <div className="flex min-h-screen items-center justify-center bg-muted">
       <SEOHead
-        title="Page Not Found — Advyu"
+        title="Page Not Found | Advyu"
         description="The page you are looking for does not exist. Return to the Advyu homepage to explore our marketing AI growth suite."
         canonical="/404"
         noIndex

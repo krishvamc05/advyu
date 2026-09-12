@@ -26,7 +26,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Advyu — Automate Your Business, Scale Without Limits"
+        title="Advyu | Automate Your Business, Scale Without Limits"
         description="Advyu is an all-in-one marketing AI growth suite for Indian businesses. Capture leads across every channel, nurture them with AI, and book appointments 24/7 via the Meta-Verified WhatsApp API."
         canonical="/"
         ogImage={OG_IMAGE}
