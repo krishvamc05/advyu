@@ -86,7 +86,7 @@ const Navbar: React.FC = () => {
           </button>
           
           <a
-            href="https://engage.advyu.com/"
+            href="https://social.advyu.com/register"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-2 text-xs font-semibold text-primary transition-colors hover:bg-primary/20"
@@ -164,7 +164,7 @@ const Navbar: React.FC = () => {
             </a>
             <hr className="border-border" />
             <a
-              href="https://engage.advyu.com/"
+              href="https://social.advyu.com/register"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 rounded-full border border-primary/30 bg-primary/10 py-2.5 text-xs font-semibold text-primary"

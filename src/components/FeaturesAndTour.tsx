@@ -32,7 +32,7 @@ const FEATURES = [
     icon: Bot,
     title: "Your 24/7 Assistant",
     desc: "Smart WhatsApp chatbots and automated call answering that route leads, answer FAQs, and book appointments automatically, even while you sleep.",
-    link: "https://engage.advyu.com/",
+    link: "https://social.advyu.com/register",
   },
   {
     icon: Image,
