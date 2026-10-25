@@ -27,7 +27,16 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Build
-        run: npm run build
+        run: |
+          npm run build
+          mkdir -p dist/privacy dist/terms dist/refund
+          cp dist/index.html dist/privacy/index.html
+          cp dist/index.html dist/terms/index.html
+          cp dist/index.html dist/refund/index.html
+          cp dist/index.html dist/privacy.html
+          cp dist/index.html dist/terms.html
+          cp dist/index.html dist/refund.html
+          cp dist/index.html dist/404.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

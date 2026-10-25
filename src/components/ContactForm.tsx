@@ -289,8 +289,21 @@ const ContactForm: React.FC = () => {
                     <ArrowRight className="h-4 w-4" />
                   </button>
                   <p className="text-center text-[10px] text-muted-foreground/70">
-                    By submitting you agree to our Privacy Policy & Terms of
-                    Service.
+                    By submitting you agree to our{" "}
+                    <a
+                      href="/privacy"
+                      className="underline transition-colors hover:text-foreground"
+                    >
+                      Privacy Policy
+                    </a>{" "}
+                    &{" "}
+                    <a
+                      href="/terms"
+                      className="underline transition-colors hover:text-foreground"
+                    >
+                      Terms of Service
+                    </a>
+                    .
                   </p>
                 </form>
               )}

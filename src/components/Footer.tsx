@@ -100,19 +100,19 @@ const Footer: React.FC = () => {
           </p>
           <div className="flex gap-6">
             <a
-              href="#"
+              href="/privacy"
               className="text-xs text-muted-foreground hover:text-primary transition-colors"
             >
               Privacy Policy
             </a>
             <a
-              href="#"
+              href="/terms"
               className="text-xs text-muted-foreground hover:text-primary transition-colors"
             >
               Terms of Service
             </a>
             <a
-              href="#"
+              href="/refund"
               className="text-xs text-muted-foreground hover:text-primary transition-colors"
             >
               Refund Policy
