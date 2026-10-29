@@ -6,9 +6,9 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://advyu.com/privacy</loc>
+    <loc>https://advyu.com/contact-us</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://advyu.com/terms</loc>
@@ -16,7 +16,17 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://advyu.com/refund</loc>
+    <loc>https://advyu.com/privacy-policy</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://advyu.com/refund-policy</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://advyu.com/shipping-policy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

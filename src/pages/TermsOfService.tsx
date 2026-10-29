@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
-import { ArrowLeft, FileText, Mail } from "lucide-react";
+import { ArrowLeft, FileText, Mail, MapPin, Phone } from "lucide-react";
 
 const TermsOfService = () => {
   useEffect(() => {
@@ -12,15 +12,15 @@ const TermsOfService = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Terms of Service | Advyu"
-        description="Review the terms and conditions governing the use of Advyu Solutions, our marketing automation tools, and messaging services."
+        title="Terms & Conditions | ADVYU Solutions"
+        description="Official Terms and Conditions governing the use of ADVYU Solutions platform, software, and marketing automation services."
         canonical="/terms"
       />
       <Navbar />
 
       <main className="py-12 sm:py-16">
         <div className="container mx-auto max-w-4xl px-6">
-          {/* Breadcrumb / Back Link */}
+          {/* Breadcrumb */}
           <div className="mb-8">
             <a
               href="/"
@@ -35,13 +35,13 @@ const TermsOfService = () => {
           <div className="border-b border-border pb-8">
             <div className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
               <FileText className="h-3.5 w-3.5" />
-              Legal & Compliance
+              Legal & Compliance Terms
             </div>
             <h1 className="mt-4 text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl">
-              Terms of Service
+              Terms & Conditions
             </h1>
             <p className="mt-2 text-sm text-muted-foreground">
-              Last updated: October 26, 2026
+              Last updated: October 29, 2026
             </p>
           </div>
 
@@ -49,194 +49,203 @@ const TermsOfService = () => {
           <div className="space-y-10 pt-8 text-sm leading-relaxed text-muted-foreground sm:text-base">
             <section className="space-y-3">
               <p>
-                Welcome to Advyu Solutions ("Advyu", "we", "our", or "us").
-                These Terms of Service govern your access to and use of our
-                website (advyu.com), software applications, messaging
-                workflows, and related automation services.
+                These Terms and Conditions ("Terms") constitute a legally binding
+                agreement between you (the "Client", "Merchant", or "User") and{" "}
+                <strong className="text-foreground">ADVYU Solutions</strong> ("ADVYU",
+                "we", "us", or "our"), governing your access to and use of our
+                website (advyu.com), software applications, and related digital
+                automation services.
               </p>
               <p>
-                By accessing or using our services, you confirm that you have
-                read, understood, and agreed to be bound by these terms. If you
-                do not agree, you must discontinue using our services.
-              </p>
-            </section>
-
-            <section className="space-y-3">
-              <h2 className="text-xl font-bold text-foreground sm:text-2xl">
-                1. Service Overview
-              </h2>
-              <p>
-                Advyu provides a suite of business growth, lead capture, CRM,
-                and communication automation tools. This includes integrations
-                with official channels like WhatsApp, unified social inboxes,
-                and appointment booking tools designed to help businesses manage
-                customer interactions.
+                By accessing our website, creating an account, or purchasing any
+                subscription package, you agree to be bound by these Terms and our
+                associated policies. If you do not agree with any part of these
+                Terms, you must refrain from using our services.
               </p>
             </section>
 
             <section className="space-y-3">
               <h2 className="text-xl font-bold text-foreground sm:text-2xl">
-                2. Account Registration and Security
+                1. Scope of Services
               </h2>
               <p>
-                When you create an account with us, you agree to:
+                ADVYU Solutions offers a comprehensive business growth and CRM
+                automation suite designed for enterprises, clinics, salons, and
+                service providers. Our digital services include:
               </p>
               <ul className="list-disc space-y-2 pl-6">
                 <li>
-                  Provide accurate, current, and complete business information.
+                  Multi-channel lead capture pipelines and centralized CRM inbox
+                  management.
                 </li>
                 <li>
-                  Maintain the confidentiality of your login credentials and API
-                  keys.
+                  Official Meta WhatsApp Cloud API messaging integrations and
+                  automated chatbot workflows.
                 </li>
                 <li>
-                  Accept responsibility for all activity occurring under your
-                  account.
+                  Online appointment scheduling, review automation, and client
+                  nurturing funnels.
                 </li>
                 <li>
-                  Notify us immediately at support@advyu.com if you suspect
-                  unauthorized access to your account.
+                  Technical implementation support and workflow deployment
+                  services.
                 </li>
               </ul>
             </section>
 
             <section className="space-y-3">
               <h2 className="text-xl font-bold text-foreground sm:text-2xl">
-                3. Acceptable Use Policy
+                2. User Obligations & Acceptable Use
               </h2>
               <p>
-                You agree to use our platform strictly for legitimate business
-                purposes and in full compliance with local and international
-                laws. You agree NOT to:
+                In utilizing the ADVYU platform and integrations, you agree to
+                comply strictly with all applicable Indian and international
+                laws, as well as Meta's WhatsApp Business Messaging Policies. You
+                explicitly agree NOT to:
               </p>
               <ul className="list-disc space-y-2 pl-6">
                 <li>
-                  Send unsolicited spam messages, deceptive marketing, or bulk
-                  campaigns to individuals who have not provided opt-in consent.
+                  Transmit unsolicited commercial messages (spam), fraudulent
+                  schemes, or marketing communications to recipients without
+                  verified opt-in consent.
                 </li>
                 <li>
-                  Violate WhatsApp Business Messaging Policies or the terms of
-                  any connected third-party platform.
+                  Distribute defamatory, obscene, deceptive, or infringing
+                  materials.
                 </li>
                 <li>
-                  Upload or distribute malicious code, viruses, or harmful
-                  scripts.
+                  Attempt to circumvent system rate limits, reverse-engineer
+                  source code, or compromise platform security.
                 </li>
                 <li>
-                  Attempt to reverse engineer, decompile, or compromise our
-                  underlying infrastructure.
-                </li>
-                <li>
-                  Use our services to harass, defraud, or impersonate any person
-                  or entity.
+                  Use our services for any unauthorized financial transactions or
+                  prohibited business activities.
                 </li>
               </ul>
+            </section>
+
+            <section className="space-y-3">
+              <h2 className="text-xl font-bold text-foreground sm:text-2xl">
+                3. Payment Terms, Billing, and Currencies
+              </h2>
               <p>
-                Violation of our acceptable use guidelines may result in
-                immediate suspension or termination of your account without
-                prior notice.
+                All platform subscriptions, setup packages, and services are
+                quoted and billed in Indian Rupees (INR ₹) unless explicitly stated
+                otherwise.
+              </p>
+              <ul className="list-disc space-y-2 pl-6">
+                <li>
+                  <strong className="text-foreground">Payment Gateways:</strong> Payments
+                  are securely processed via RBI-authorized payment aggregators
+                  (including PhonePe, UPI, net banking, debit cards, and credit
+                  cards).
+                </li>
+                <li>
+                  <strong className="text-foreground">Billing Cycles:</strong> Subscription
+                  fees are charged in advance on a recurring monthly or annual
+                  schedule according to your selected engagement tier.
+                </li>
+                <li>
+                  <strong className="text-foreground">Taxes:</strong> Applicable Good and
+                  Services Tax (GST) will be charged in accordance with Indian tax
+                  statutes and reflected on valid tax invoices.
+                </li>
+              </ul>
+            </section>
+
+            <section className="space-y-3">
+              <h2 className="text-xl font-bold text-foreground sm:text-2xl">
+                4. Intellectual Property Rights
+              </h2>
+              <p>
+                All proprietary software, algorithms, trademarks, visual assets,
+                and documentation hosted on advyu.com remain the sole intellectual
+                property of ADVYU Solutions. Clients retain complete ownership of
+                their customer data, uploaded logos, and business content stored
+                within their account workspace.
               </p>
             </section>
 
             <section className="space-y-3">
               <h2 className="text-xl font-bold text-foreground sm:text-2xl">
-                4. Third-Party Integrations
+                5. Limitation of Liability
               </h2>
               <p>
-                Our services integrate with external platforms including Meta
-                (WhatsApp Cloud API) and third-party communication providers.
-                Your use of these integrations is subject to each provider's
-                terms of service. Advyu is not responsible for policy changes,
-                downtime, or account restrictions imposed by external platform
-                operators.
+                To the fullest extent permissible under Indian law, ADVYU Solutions,
+                its proprietors, directors, and affiliates shall not be liable for
+                any indirect, incidental, punitive, or consequential damages,
+                including loss of profits, data corruption, or business interruption
+                arising from the use or inability to use our services.
+              </p>
+              <p>
+                Our aggregate liability for any claim arising out of these Terms
+                shall be limited strictly to the total amount paid by you to ADVYU
+                Solutions in the three (3) months preceding the cause of action.
               </p>
             </section>
 
             <section className="space-y-3">
               <h2 className="text-xl font-bold text-foreground sm:text-2xl">
-                5. Intellectual Property
+                6. Governing Law & Jurisdiction
               </h2>
               <p>
-                All rights, title, and interest in the Advyu platform, including
-                our logos, interface designs, software code, and documentation,
-                remain the exclusive property of Advyu Solutions. You retain
-                complete ownership of your business data, customer records, and
-                content uploaded to your workspace.
+                These Terms and Conditions shall be governed by, construed, and
+                enforced in accordance with the laws of the Republic of India.
+              </p>
+              <div className="rounded-xl border border-primary/20 bg-primary/5 p-4 text-sm font-semibold text-foreground">
+                Any dispute, controversy, or claim arising out of or relating to
+                these Terms shall be subject to the exclusive jurisdiction of the
+                competent courts located in Hyderabad, Telangana, India.
+              </div>
+            </section>
+
+            <section className="space-y-3">
+              <h2 className="text-xl font-bold text-foreground sm:text-2xl">
+                7. Termination of Account
+              </h2>
+              <p>
+                We reserve the right to suspend or terminate your account access
+                immediately, without liability, if you violate any provision of
+                these Terms, engage in unsolicited spam broadcasting, or fail to
+                settle outstanding invoices upon notice.
               </p>
             </section>
 
             <section className="space-y-3">
               <h2 className="text-xl font-bold text-foreground sm:text-2xl">
-                6. Subscription and Billing Terms
+                8. Contact & Legal Notices
               </h2>
               <p>
-                Access to paid tiers and automation packages is billed on a
-                recurring subscription basis (monthly or annually) as selected
-                during sign-up. Invoices are generated automatically, and
-                payments must be made via authorized payment methods.
-              </p>
-              <p>
-                You may cancel your recurring plan at any time through your
-                account settings. Cancellation stops future renewals while
-                allowing access through the end of the current billing cycle.
-              </p>
-            </section>
-
-            <section className="space-y-3">
-              <h2 className="text-xl font-bold text-foreground sm:text-2xl">
-                7. Limitation of Liability
-              </h2>
-              <p>
-                To the maximum extent permitted by applicable law, Advyu
-                Solutions and its directors, employees, or partners will not be
-                held liable for any indirect, incidental, special, or
-                consequential damages resulting from service interruptions, loss
-                of business data, or loss of profits arising out of your use of
-                our tools.
-              </p>
-              <p>
-                Our total liability for any claim arising from these terms is
-                limited to the amount paid by you to Advyu in the three months
-                preceding the event giving rise to the claim.
-              </p>
-            </section>
-
-            <section className="space-y-3">
-              <h2 className="text-xl font-bold text-foreground sm:text-2xl">
-                8. Modifications to Terms
-              </h2>
-              <p>
-                We may revise these Terms of Service periodically to reflect
-                operational updates or changes in law. When updates occur, the
-                revision date at the top of this document will be updated.
-                Continued use of our platform after updates indicates acceptance
-                of the amended terms.
-              </p>
-            </section>
-
-            <section className="space-y-3">
-              <h2 className="text-xl font-bold text-foreground sm:text-2xl">
-                9. Contact Information
-              </h2>
-              <p>
-                If you have questions or concerns about these Terms of Service,
-                please reach out directly:
+                For any formal legal notifications or questions regarding these
+                Terms, please reach out to our legal department:
               </p>
               <div className="mt-4 rounded-xl border border-border bg-card p-6">
-                <p className="font-semibold text-foreground">
-                  Advyu Solutions Support
+                <p className="font-bold text-foreground">
+                  ADVYU Solutions - Legal Department
                 </p>
-                <div className="mt-3 flex items-center gap-3">
-                  <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                    <Mail className="h-4 w-4" />
-                  </span>
-                  <div>
-                    <p className="text-xs text-muted-foreground">Support Desk</p>
+                <div className="mt-3 space-y-2 text-sm text-muted-foreground">
+                  <div className="flex items-center gap-3">
+                    <MapPin className="h-4 w-4 text-primary flex-shrink-0" />
+                    <span>
+                      Plot No. 4/2, Sector 1, HUDA Techno Enclave, HITEC City, Madhapur, Hyderabad, Telangana 500081, India
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Mail className="h-4 w-4 text-primary flex-shrink-0" />
                     <a
                       href="mailto:support@advyu.com"
-                      className="text-sm font-semibold text-primary hover:underline"
+                      className="font-medium text-primary hover:underline"
                     >
                       support@advyu.com
+                    </a>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Phone className="h-4 w-4 text-primary flex-shrink-0" />
+                    <a
+                      href="tel:+919550154269"
+                      className="font-medium text-foreground hover:text-primary transition-colors"
+                    >
+                      +91 95501 54269
                     </a>
                   </div>
                 </div>

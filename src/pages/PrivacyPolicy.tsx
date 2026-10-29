@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
-import { ArrowLeft, ShieldCheck, Mail } from "lucide-react";
+import { ArrowLeft, ShieldCheck, Mail, Phone, MapPin, Lock } from "lucide-react";
 
 const PrivacyPolicy = () => {
   useEffect(() => {
@@ -12,15 +12,15 @@ const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Privacy Policy | Advyu"
-        description="Learn how Advyu collects, uses, and protects your personal and business data across our marketing and automation suite."
-        canonical="/privacy"
+        title="Privacy Policy | ADVYU Solutions"
+        description="Learn how ADVYU Solutions collects, uses, and secures your personal and business data in compliance with the Indian IT Act and DPDP Act."
+        canonical="/privacy-policy"
       />
       <Navbar />
 
       <main className="py-12 sm:py-16">
         <div className="container mx-auto max-w-4xl px-6">
-          {/* Breadcrumb / Back Link */}
+          {/* Breadcrumb */}
           <div className="mb-8">
             <a
               href="/"
@@ -35,13 +35,13 @@ const PrivacyPolicy = () => {
           <div className="border-b border-border pb-8">
             <div className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
               <ShieldCheck className="h-3.5 w-3.5" />
-              Legal & Privacy
+              Statutory Privacy & Data Protection
             </div>
             <h1 className="mt-4 text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl">
               Privacy Policy
             </h1>
             <p className="mt-2 text-sm text-muted-foreground">
-              Last updated: October 26, 2026
+              Last updated: October 29, 2026
             </p>
           </div>
 
@@ -49,16 +49,28 @@ const PrivacyPolicy = () => {
           <div className="space-y-10 pt-8 text-sm leading-relaxed text-muted-foreground sm:text-base">
             <section className="space-y-3">
               <p>
-                At Advyu Solutions ("Advyu", "we", "our", or "us"), accessible
-                from advyu.com, protecting the privacy of our visitors and
-                clients is a core commitment. This Privacy Policy details the
-                types of information we collect, how we use it, and your rights
-                regarding your data.
+                At ADVYU Solutions ("ADVYU", "we", "our", or "us"), accessible
+                from advyu.com, respecting and safeguarding the personal and
+                business information of our visitors, clients, and merchants is
+                paramount.
               </p>
               <p>
-                By using our website, software platform, or automation services,
-                you agree to the collection and use of information in accordance
-                with this policy.
+                This Privacy Policy outlines our data collection, handling, and
+                security protocols in strict compliance with the{" "}
+                <strong className="text-foreground">
+                  Information Technology Act, 2000
+                </strong>
+                , the{" "}
+                <strong className="text-foreground">
+                  Information Technology (Reasonable Security Practices and
+                  Procedures and Sensitive Personal Data or Information) Rules,
+                  2011
+                </strong>
+                , and the{" "}
+                <strong className="text-foreground">
+                  Digital Personal Data Protection Act, 2023 (DPDP Act)
+                </strong>
+                .
               </p>
             </section>
 
@@ -67,159 +79,175 @@ const PrivacyPolicy = () => {
                 1. Information We Collect
               </h2>
               <p>
-                We only collect data necessary to provide our business
-                automation and marketing services:
+                We only collect data necessary to provide and manage our CRM,
+                marketing automation, and messaging services:
               </p>
               <ul className="list-disc space-y-2 pl-6">
                 <li>
-                  <strong className="text-foreground">Contact Details:</strong>{" "}
-                  Your name, business email address, phone number, and company
-                  name when you request a demo, fill out our contact forms, or
-                  contact our team directly.
+                  <strong className="text-foreground">Customer Contact Data:</strong>{" "}
+                  Full name, company name, corporate email address, contact phone
+                  number, and physical billing address provided when submitting forms
+                  or registering an account.
                 </li>
                 <li>
-                  <strong className="text-foreground">Account Information:</strong>{" "}
-                  Credentials, workspace configurations, and billing contact
-                  details when you register for an Advyu account.
+                  <strong className="text-foreground">Payment & Billing Records:</strong>{" "}
+                  GST number (where applicable), transaction identifiers, billing
+                  invoices, and order history. Note: Card details, CVV, and net banking
+                  passwords are never stored on our servers; they are processed
+                  directly through RBI-authorized payment aggregators.
                 </li>
                 <li>
-                  <strong className="text-foreground">
-                    Communication & Workflow Data:
-                  </strong>{" "}
-                  Message logs, campaign metrics, and chatbot triggers configured
-                  within your automation workflows to help deliver support and
-                  monitor service health.
+                  <strong className="text-foreground">Communication & Workflow Logs:</strong>{" "}
+                  Lead responses, message delivery receipts, and chatbot configuration
+                  data processed through the WhatsApp Business Cloud API.
                 </li>
                 <li>
                   <strong className="text-foreground">Technical Log Data:</strong>{" "}
-                  Standard web logs such as your browser type, IP address,
-                  referring pages, operating system, and timestamp of visits to
-                  improve website speed and protect against malicious traffic.
+                  IP addresses, browser type, device information, timestamp of
+                  access, and session activity collected for security auditing and
+                  preventing DDoS or fraudulent activities.
                 </li>
               </ul>
             </section>
 
             <section className="space-y-3">
               <h2 className="text-xl font-bold text-foreground sm:text-2xl">
-                2. How We Use Your Information
+                2. Purpose of Data Processing
               </h2>
               <p>
-                We use the data collected strictly for direct operational
-                purposes, including:
+                We utilize client information solely for legitimate commercial
+                functions, including:
               </p>
               <ul className="list-disc space-y-2 pl-6">
                 <li>
-                  Setting up and delivering your CRM and messaging workflows.
+                  Configuring, delivering, and maintaining your cloud workspace and
+                  automation integrations.
                 </li>
                 <li>
-                  Providing prompt technical support and answering your queries.
+                  Processing subscription billing, tax invoicing, and issuing
+                  refunds through certified payment gateways.
                 </li>
                 <li>
-                  Transmitting system alerts, service updates, and billing
-                  receipts.
+                  Providing dedicated customer support and addressing technical
+                  inquiries.
                 </li>
                 <li>
-                  Monitoring platform reliability, uptime, and fraud prevention.
-                </li>
-                <li>
-                  Refining features based on aggregate usage statistics.
+                  Verifying account authenticity and preventing unauthorized access
+                  or spam misuse.
                 </li>
               </ul>
-              <p className="font-medium text-foreground">
-                We never sell, rent, or trade your personal data or customer
-                records to third parties for advertising.
+              <p className="font-semibold text-foreground">
+                ADVYU Solutions does not sell, barter, or distribute your personal
+                or customer information to third-party data brokers or advertisers.
               </p>
             </section>
 
             <section className="space-y-3">
               <h2 className="text-xl font-bold text-foreground sm:text-2xl">
-                3. WhatsApp & Third-Party Service Providers
+                3. Third-Party Data Sharing & Payment Gateways
               </h2>
               <p>
-                To provide messaging integrations (such as the official WhatsApp
-                Business Cloud API), Advyu connects with verified service
-                partners including Meta. Your communication data is processed in
-                compliance with Meta's developer and business terms.
-              </p>
-              <p>
-                We may also use trusted cloud hosting providers, database
-                services, and payment gateways. These partners only process data
-                instructed by us under strict confidentiality terms.
-              </p>
-            </section>
-
-            <section className="space-y-3">
-              <h2 className="text-xl font-bold text-foreground sm:text-2xl">
-                4. Data Security & Storage
-              </h2>
-              <p>
-                We use industry-standard security measures, including SSL/TLS
-                encryption for data in transit and encrypted data storage at
-                rest. Access to client data is strictly restricted to authorized
-                personnel who require access for maintenance or support.
-              </p>
-              <p>
-                While no electronic transmission over the internet is completely
-                infallible, we continuously review and update our safeguards to
-                maintain the integrity of your data.
-              </p>
-            </section>
-
-            <section className="space-y-3">
-              <h2 className="text-xl font-bold text-foreground sm:text-2xl">
-                5. Data Retention & Your Rights
-              </h2>
-              <p>
-                We keep your information as long as your workspace remains
-                active or as necessary to fulfill legal obligations and resolve
-                disputes. You have full rights to:
+                To provide secure payment processing and messaging services, we
+                collaborate with trusted, industry-certified partners:
               </p>
               <ul className="list-disc space-y-2 pl-6">
-                <li>Request a copy of the personal information we hold about you.</li>
-                <li>Request corrections to inaccurate or incomplete information.</li>
                 <li>
-                  Request permanent deletion of your data when your account is
-                  closed.
+                  <strong className="text-foreground">Payment Gateway Aggregators:</strong>{" "}
+                  We integrate with licensed payment aggregators (such as PhonePe)
+                  operating under Reserve Bank of India (RBI) guidelines. All financial
+                  exchanges are conducted over encrypted PCI-DSS compliant channels.
                 </li>
-                <li>Opt out of marketing updates at any time.</li>
+                <li>
+                  <strong className="text-foreground">Communication Infrastructure:</strong>{" "}
+                  WhatsApp Business Cloud API services provided through Meta for
+                  automated notifications and customer communications.
+                </li>
+                <li>
+                  <strong className="text-foreground">Cloud Hosting:</strong> High-security
+                  cloud hosting facilities with physical access controls, continuous
+                  monitoring, and firewall protection.
+                </li>
               </ul>
             </section>
 
             <section className="space-y-3">
               <h2 className="text-xl font-bold text-foreground sm:text-2xl">
-                6. Cookies & Tracking
+                4. Data Security and Encryption
               </h2>
-              <p>
-                Advyu uses essential cookies to remember your theme preferences
-                (such as Dark Mode) and maintain active sessions. You can choose
-                to disable cookies through your browser settings, though some
-                features of the site may function with reduced speed.
-              </p>
+              <div className="rounded-xl border border-border bg-card p-5">
+                <div className="flex items-start gap-3">
+                  <Lock className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                  <div>
+                    <h3 className="font-bold text-foreground">
+                      256-Bit SSL/TLS Security Standards
+                    </h3>
+                    <p className="mt-1 text-xs text-muted-foreground leading-relaxed sm:text-sm">
+                      All data exchanged between your web browser and our platform is
+                      encrypted using current TLS 1.3 protocols. Stored data is
+                      protected with industry-standard 256-bit AES encryption at rest,
+                      and access permissions are restricted strictly to authorized
+                      engineering and support personnel.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </section>
 
             <section className="space-y-3">
               <h2 className="text-xl font-bold text-foreground sm:text-2xl">
-                7. Contact Us
+                5. User Rights Under the DPDP Act
               </h2>
               <p>
-                If you have questions regarding this Privacy Policy or wish to
-                exercise your data rights, please contact our team:
+                In alignment with the Digital Personal Data Protection Act, 2023,
+                you retain full rights to:
+              </p>
+              <ul className="list-disc space-y-2 pl-6">
+                <li>Request access to the personal data we hold about you.</li>
+                <li>Request correction or updating of inaccurate personal records.</li>
+                <li>
+                  Request erasure of personal information upon closure of your
+                  account, subject to statutory tax and financial retention laws.
+                </li>
+                <li>Nominate a representative or withdraw consent at any time.</li>
+              </ul>
+            </section>
+
+            <section className="space-y-3">
+              <h2 className="text-xl font-bold text-foreground sm:text-2xl">
+                6. Grievance Officer & Official Contact Details
+              </h2>
+              <p>
+                In accordance with the Information Technology Act, 2000, and the
+                rules framed thereunder, the details of our Grievance Officer are
+                provided below:
               </p>
               <div className="mt-4 rounded-xl border border-border bg-card p-6">
-                <p className="font-semibold text-foreground">
-                  Advyu Solutions Data Protection
+                <p className="text-base font-bold text-foreground">
+                  ADVYU Solutions - Grievance & Compliance Desk
                 </p>
-                <div className="mt-3 flex items-center gap-3">
-                  <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                    <Mail className="h-4 w-4" />
-                  </span>
-                  <div>
-                    <p className="text-xs text-muted-foreground">Direct Email</p>
+                <div className="mt-4 space-y-3 text-sm">
+                  <div className="flex items-center gap-3">
+                    <MapPin className="h-4 w-4 text-primary flex-shrink-0" />
+                    <span className="text-muted-foreground">
+                      Plot No. 4/2, Sector 1, HUDA Techno Enclave, HITEC City, Madhapur, Hyderabad, Telangana 500081, India
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Mail className="h-4 w-4 text-primary flex-shrink-0" />
                     <a
                       href="mailto:support@advyu.com"
-                      className="text-sm font-semibold text-primary hover:underline"
+                      className="font-medium text-primary hover:underline"
                     >
                       support@advyu.com
+                    </a>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Phone className="h-4 w-4 text-primary flex-shrink-0" />
+                    <a
+                      href="tel:+919550154269"
+                      className="font-medium text-foreground hover:text-primary transition-colors"
+                    >
+                      +91 95501 54269
                     </a>
                   </div>
                 </div>

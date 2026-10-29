@@ -73,6 +73,12 @@ const Navbar: React.FC = () => {
           >
             FAQs
           </a>
+          <a
+            href="/contact-us"
+            className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+          >
+            Contact
+          </a>
         </nav>
 
         {/* Desktop Action Buttons */}
@@ -161,6 +167,13 @@ const Navbar: React.FC = () => {
               className="text-sm font-medium text-muted-foreground hover:text-primary"
             >
               FAQs
+            </a>
+            <a
+              href="/contact-us"
+              onClick={() => setIsOpen(false)}
+              className="text-sm font-medium text-muted-foreground hover:text-primary"
+            >
+              Contact Us
             </a>
             <hr className="border-border" />
             <a

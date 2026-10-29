@@ -29,13 +29,20 @@ jobs:
       - name: Build
         run: |
           npm run build
-          mkdir -p dist/privacy dist/terms dist/refund
+          mkdir -p dist/contact-us dist/contact dist/privacy-policy dist/privacy dist/terms dist/terms-and-conditions dist/terms-of-service dist/refund-policy dist/refund-and-cancellation dist/refund dist/shipping-policy dist/shipping-and-delivery dist/fulfillment-policy
+          cp dist/index.html dist/contact-us/index.html
+          cp dist/index.html dist/contact/index.html
+          cp dist/index.html dist/privacy-policy/index.html
           cp dist/index.html dist/privacy/index.html
           cp dist/index.html dist/terms/index.html
+          cp dist/index.html dist/terms-and-conditions/index.html
+          cp dist/index.html dist/terms-of-service/index.html
+          cp dist/index.html dist/refund-policy/index.html
+          cp dist/index.html dist/refund-and-cancellation/index.html
           cp dist/index.html dist/refund/index.html
-          cp dist/index.html dist/privacy.html
-          cp dist/index.html dist/terms.html
-          cp dist/index.html dist/refund.html
+          cp dist/index.html dist/shipping-policy/index.html
+          cp dist/index.html dist/shipping-and-delivery/index.html
+          cp dist/index.html dist/fulfillment-policy/index.html
           cp dist/index.html dist/404.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

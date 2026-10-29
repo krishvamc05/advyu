@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Mail, Clock, ArrowRight, CheckCircle2 } from "lucide-react";
+import { Mail, Clock, ArrowRight, CheckCircle2, Phone, MapPin } from "lucide-react";
 
 type StandardTrackingFieldKey = string;
 type RegisteredCustomFieldId = string;
@@ -159,9 +159,26 @@ const ContactForm: React.FC = () => {
                 you can save.
               </p>
 
+              <p className="mt-2 text-xs font-semibold uppercase tracking-wider text-primary">
+                Registered Merchant: ADVYU Solutions
+              </p>
+
               <div className="mt-8 space-y-4">
+                <div className="flex items-start gap-3">
+                  <span className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-primary/15 text-primary">
+                    <MapPin className="h-5 w-5" />
+                  </span>
+                  <div>
+                    <p className="text-xs text-muted-foreground">
+                      Registered Office
+                    </p>
+                    <p className="text-sm font-semibold leading-snug">
+                      Plot No. 4/2, Sector 1, HUDA Techno Enclave, HITEC City, Madhapur, Hyderabad, Telangana 500081, India
+                    </p>
+                  </div>
+                </div>
                 <div className="flex items-center gap-3">
-                  <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/15 text-primary">
+                  <span className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-primary/15 text-primary">
                     <Mail className="h-5 w-5" />
                   </span>
                   <div>
@@ -175,7 +192,21 @@ const ContactForm: React.FC = () => {
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/15 text-primary">
+                  <span className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-primary/15 text-primary">
+                    <Phone className="h-5 w-5" />
+                  </span>
+                  <div>
+                    <p className="text-xs text-muted-foreground">Support Helpline</p>
+                    <a
+                      href="tel:+919550154269"
+                      className="text-sm font-semibold hover:text-primary"
+                    >
+                      +91 95501 54269
+                    </a>
+                  </div>
+                </div>
+                <div className="flex items-center gap-3">
+                  <span className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-primary/15 text-primary">
                     <Clock className="h-5 w-5" />
                   </span>
                   <div>
@@ -183,7 +214,7 @@ const ContactForm: React.FC = () => {
                       Local Support
                     </p>
                     <p className="text-sm font-semibold">
-                      Mon - Sat, 10 AM - 7 PM
+                      Mon - Sat, 10 AM - 7 PM IST
                     </p>
                   </div>
                 </div>
@@ -291,7 +322,7 @@ const ContactForm: React.FC = () => {
                   <p className="text-center text-[10px] text-muted-foreground/70">
                     By submitting you agree to our{" "}
                     <a
-                      href="/privacy"
+                      href="/privacy-policy"
                       className="underline transition-colors hover:text-foreground"
                     >
                       Privacy Policy
