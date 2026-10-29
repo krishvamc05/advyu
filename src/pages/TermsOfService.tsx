@@ -227,7 +227,7 @@ const TermsOfService = () => {
                   <div className="flex items-center gap-3">
                     <MapPin className="h-4 w-4 text-primary flex-shrink-0" />
                     <span>
-                      Plot No. 4/2, Sector 1, HUDA Techno Enclave, HITEC City, Madhapur, Hyderabad, Telangana 500081, India
+                      Hyderabad, Telangana, India
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
@@ -242,10 +242,10 @@ const TermsOfService = () => {
                   <div className="flex items-center gap-3">
                     <Phone className="h-4 w-4 text-primary flex-shrink-0" />
                     <a
-                      href="tel:+919550154269"
+                      href="tel:+919949510223"
                       className="font-medium text-foreground hover:text-primary transition-colors"
                     >
-                      +91 95501 54269
+                      +91 99495 10223
                     </a>
                   </div>
                 </div>

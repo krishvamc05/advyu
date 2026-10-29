@@ -25,8 +25,7 @@ const Footer: React.FC = () => {
               <div className="flex items-start gap-2.5">
                 <MapPin className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
                 <span>
-                  Plot No. 4/2, Sector 1, HUDA Techno Enclave, HITEC City,
-                  Madhapur, Hyderabad, Telangana 500081, India.
+                  Hyderabad, Telangana, India.
                 </span>
               </div>
               <div className="flex items-center gap-2.5">
@@ -41,10 +40,10 @@ const Footer: React.FC = () => {
               <div className="flex items-center gap-2.5">
                 <Phone className="h-4 w-4 text-primary flex-shrink-0" />
                 <a
-                  href="tel:+919550154269"
+                  href="tel:+919949510223"
                   className="hover:text-primary transition-colors"
                 >
-                  +91 95501 54269
+                  +91 99495 10223
                 </a>
               </div>
             </div>

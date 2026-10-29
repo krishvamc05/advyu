@@ -173,7 +173,7 @@ const ContactForm: React.FC = () => {
                       Registered Office
                     </p>
                     <p className="text-sm font-semibold leading-snug">
-                      Plot No. 4/2, Sector 1, HUDA Techno Enclave, HITEC City, Madhapur, Hyderabad, Telangana 500081, India
+                      Hyderabad, Telangana, India
                     </p>
                   </div>
                 </div>
@@ -196,12 +196,12 @@ const ContactForm: React.FC = () => {
                     <Phone className="h-5 w-5" />
                   </span>
                   <div>
-                    <p className="text-xs text-muted-foreground">Support Helpline</p>
+                    <p className="text-xs text-muted-foreground">Customer Support Helpline</p>
                     <a
-                      href="tel:+919550154269"
+                      href="tel:+919949510223"
                       className="text-sm font-semibold hover:text-primary"
                     >
-                      +91 95501 54269
+                      +91 99495 10223
                     </a>
                   </div>
                 </div>

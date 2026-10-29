@@ -109,10 +109,8 @@ const ContactUs = () => {
                       ADVYU Solutions Corporate Office
                     </p>
                     <p className="mt-1">
-                      Plot No. 4/2, Sector 1, HUDA Techno Enclave,
+                      Hyderabad, Telangana, India.
                     </p>
-                    <p>HITEC City, Madhapur, Hyderabad,</p>
-                    <p>Telangana 500081, India.</p>
                   </div>
                 </div>
               </div>
@@ -145,10 +143,10 @@ const ContactUs = () => {
                     <div>
                       <p className="text-xs text-muted-foreground">Customer Support Helpline</p>
                       <a
-                        href="tel:+919550154269"
+                        href="tel:+919949510223"
                         className="font-semibold text-foreground hover:text-primary transition-colors"
                       >
-                        +91 95501 54269
+                        +91 99495 10223
                       </a>
                     </div>
                   </div>
